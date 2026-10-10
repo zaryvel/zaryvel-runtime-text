@@ -2,16 +2,16 @@
 <html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Zaryvel Blox Running Text</title>
 <style>
-:root{--speed:34s;--size:16px;--height:48px}*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden;background:transparent;font-family:Arial,Helvetica,sans-serif;color:#f5f5f5}
+:root{--speed:34s;--size:16px;--height:70px}*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden;background:transparent;font-family:Arial,Helvetica,sans-serif;color:#f5f5f5}
 .stage{position:fixed;inset:0;width:100vw;height:100vh;display:flex;align-items:flex-end;padding-bottom:4vh}.ticker{height:var(--height);width:100%;display:flex;align-items:center;overflow:hidden;background:rgba(7,7,9,.9);border-top:1px solid #777;border-bottom:1px solid #333;box-shadow:0 -8px 35px #0003}
 .brand{height:100%;padding:0 18px;display:flex;align-items:center;gap:14px;flex:none;background:linear-gradient(135deg,#f4f4f5,#a1a1aa,#52525b);color:#08080a;font-weight:1000;letter-spacing:1px;font-size:15px;border-right:1px solid #aaa;white-space:nowrap}
-.mark{width:56px;height:56px;display:flex;align-items:center;justify-content:center;flex:none;transform:none;border:0;background:transparent}.mark img{display:block;width:100%;height:100%;object-fit:contain;transform:none}.brand small{display:block;font-size:7px;letter-spacing:2px;margin-top:3px}
+.mark{width:82px;height:82px;display:flex;align-items:center;justify-content:center;flex:none;transform:none;border:0;background:transparent}.mark img{display:block;width:100%;height:100%;object-fit:contain;transform:scale(1.12);image-rendering:auto;-webkit-backface-visibility:hidden;backface-visibility:hidden}.brand small{display:block;font-size:7px;letter-spacing:2px;margin-top:3px}
 .live{flex:none;margin:0 17px;display:flex;align-items:center;gap:7px;font-size:11px;font-weight:1000;letter-spacing:1px}.dot{height:8px;width:8px;border-radius:50%;background:#fb3656;box-shadow:0 0 10px #fb3656;animation:pulse 1.3s infinite}
 .window{flex:1;min-width:0;overflow:hidden;height:100%;display:flex;align-items:center}.track{display:flex;align-items:center;width:max-content;white-space:nowrap;animation:scroll var(--speed) linear infinite}.ticker:hover .track{animation-play-state:paused}
 .msg{font-size:var(--size);font-weight:900;letter-spacing:.3px;padding:0 28px;text-shadow:0 2px 9px #000}.sep{color:#d4d4d8;padding-left:14px}
 @keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}@keyframes pulse{50%{opacity:.4;transform:scale(.8)}}
 body.transparent .ticker{background:transparent;border:0;box-shadow:none}body.transparent .brand{background:#09090be0;color:#fff;border:1px solid #555}body.transparent .mark{border-color:white}
-@media(max-width:700px){:root{--size:14px;--height:42px}.brand{padding:0 9px;gap:7px;font-size:11px}.mark{width:38px;height:38px}.brand small{font-size:5px}.live{margin:0 8px;font-size:8px}.msg{padding:0 14px}}
+@media(max-width:700px){:root{--size:14px;--height:54px}.brand{padding:0 9px;gap:7px;font-size:11px}.mark{width:56px;height:56px}.brand small{font-size:5px}.live{margin:0 8px;font-size:8px}.msg{padding:0 14px}}
 </style></head><body>
 <div class="stage" id="stage">
 
