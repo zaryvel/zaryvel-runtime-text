@@ -9,16 +9,13 @@ html,body{margin:0;padding:0;width:100%;background:transparent;overflow:hidden}
 .stage{position:relative;width:100%;max-width:2048px;margin:0 auto;aspect-ratio:2048/704;overflow:hidden;isolation:isolate;background:transparent}
 .bg{position:absolute;inset:0;width:100%;height:100%;object-fit:fill;display:block;animation:ambient 8s ease-in-out infinite alternate;will-change:filter}
 .glint{position:absolute;inset:-30% auto -30% -45%;width:18%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.22),rgba(255,255,255,.02),transparent);transform:skewX(-20deg);animation:sweep 8s ease-in-out infinite;pointer-events:none;mix-blend-mode:screen}
-.brand{position:absolute;left:48%;width:44%;top:24%;height:29%;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;color:#f5f5f5;font-family:Arial,Helvetica,sans-serif;font-weight:1000;text-transform:uppercase;line-height:.9;filter:drop-shadow(0 2px 2px #000)}
-.brand .roblox{font-size:clamp(12px,2.4vw,48px);letter-spacing:.12em;color:#eee;text-shadow:0 1px 0 #777,0 0 12px #fff}
-.brand .username{font-size:clamp(22px,5.1vw,102px);font-style:italic;letter-spacing:.035em;background:linear-gradient(#fff 5%,#b9b9b9 48%,#fdfdfd 55%,#777 100%);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-stroke:.5px rgba(255,255,255,.45);filter:drop-shadow(0 4px 1px #111);margin-top:.06em;animation:metalPulse 5s ease-in-out infinite}
-.message{position:absolute;left:49%;width:43%;top:61%;height:18%;display:flex;align-items:center;justify-content:center;padding:0 3%;text-align:center;color:#fff;font:800 clamp(9px,1.85vw,36px)/1.15 monospace;letter-spacing:.035em;text-transform:uppercase;text-shadow:0 0 8px rgba(255,255,255,.8),0 2px 3px #000;overflow:hidden}
+.message{position:absolute;left:48.5%;width:44%;top:39%;height:15%;display:flex;align-items:center;justify-content:center;padding:0 2%;text-align:center;color:#f7f7f7;font:800 clamp(9px,1.55vw,31px)/1.15 "Arial Narrow","Trebuchet MS",monospace;letter-spacing:.055em;text-transform:uppercase;text-shadow:0 0 5px rgba(255,255,255,.7),0 2px 3px #000;overflow:hidden;white-space:nowrap}
 .cursor{display:inline-block;width:.55ch;height:1em;background:#fff;margin-left:.15em;vertical-align:-.12em;box-shadow:0 0 8px #fff;animation:blink .7s steps(1) infinite;flex:0 0 auto}
 @keyframes ambient{0%{filter:brightness(.94) contrast(1.02)}50%{filter:brightness(1.08) contrast(1.08)}100%{filter:brightness(1) contrast(1.04)}}
 @keyframes sweep{0%,20%{left:-45%}75%,100%{left:130%}}
 @keyframes metalPulse{0%,100%{filter:drop-shadow(0 4px 1px #111) brightness(.95)}50%{filter:drop-shadow(0 4px 1px #111) brightness(1.2)}}
 @keyframes blink{50%{opacity:0}}
-@media(prefers-reduced-motion:reduce){.bg,.glint,.username,.cursor{animation:none}}
+@media(prefers-reduced-motion:reduce){.bg,.glint,.cursor{animation:none}}
 </style></head>
 <body>
 <main class="stage" aria-label="VidMac10 streaming overlay">
